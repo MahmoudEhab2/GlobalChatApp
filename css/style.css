@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+*:focus{
+    outline: none;
+}
+html{
+    font-size: 20px;
+    font-family: monospace;
+    overflow: scroll;
+    background-color: #e67e22;
+}
+
+#MainSection{
+    width: 100%;
+    height: 100vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e67e22), color-stop(#e67e22), to(#f39c12));
+    background: linear-gradient(#e67e22, #e67e22, #f39c12);
+    text-align: center;
+    -webkit-animation-name: html_background;
+    animation-name: html_background;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.div1{
+    display: block;
+    width: 75%;
+    height: 30%;
+    margin: auto;
+    text-align: center;
+    opacity: 0;
+    -webkit-animation-name: div1_anim;
+    animation-name: div1_anim;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.div1 img{
+    height: 80%; 
+    width: auto; 
+    background: url(..images/ToDo_icon.png);
+    -webkit-animation-name: iconImg;
+    animation-name: iconImg; 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-delay: 1s; 
+    animation-delay: 1s;
+}
+.div2{
+    display: block;
+    width: auto;
+    height: 50%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: scroll;
+    text-align: center;
+    opacity: 0;
+    -webkit-animation-name: div1_anim;
+    animation-name: div1_anim;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.div2 img{
+    display: inline-block;
+    margin: 1% 20px;
+}
+.div3{
+    display: block;
+    width: 75%;
+    height: 20%;
+    margin: auto;
+    text-align: center;
+    opacity: 0;
+    -webkit-animation-name: div1_anim;
+    animation-name: div1_anim;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.div3 a{
+    display: inline-block;
+    margin-top: 30px;
+    color: white;
+    background-color: #f39c12;
+    border: solid white 2px;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.div3 a:hover{
+    color: #f39c12;
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px){
+    .div2 img{
+        margin: 1% 5px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .div2{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .div2 img{
+        margin: 1% 10px;
+    }
+}
